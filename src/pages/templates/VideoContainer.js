@@ -11,7 +11,7 @@ import VideoList from "../organisms/VideoList";
 import { mock } from "../data/mock";
 
 const VideoContainer = () => {
-  const [items, setItems] = useState(() => Normalize(mock.items));
+  const [items, setItems] = useState(() => Normalize([]));
   const [selectItem, setSelectItem] = useState(null);
   const { status, response } = useNetworkSelector("youtubeSearch");
 
